@@ -1,0 +1,102 @@
+{
+  "headline": "How I can help you",
+  "intro": "Every service is built around one principle: getting to the root of your symptoms and building a plan that works for your unique body.",
+  "services_list": [
+    {
+      "name": "Root-Cause Consultation",
+      "eyebrow": "Step 1",
+      "description": "Your journey begins with a comprehensive 90-minute consultation — the most in-depth health conversation you'll ever have. We review your full health history, symptoms timeline, family history, lifestyle, stress patterns, diet and more.",
+      "detail": "This isn't a 10-minute GP appointment. This is the time and space to truly understand you.",
+      "price": "£295",
+      "price_label": "/ 90-minute initial consultation",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=700&auto=format&fit=crop&q=80",
+      "includes": [
+        { "item": "Full health history & timeline review" },
+        { "item": "Advanced laboratory testing recommendations" },
+        { "item": "Personalised health assessment report" },
+        { "item": "Initial nutrition and lifestyle guidance" },
+        { "item": "Follow-up plan and next steps" }
+      ]
+    },
+    {
+      "name": "Hormone & Gut Health",
+      "eyebrow": "Speciality",
+      "description": "Hormonal imbalances and gut dysfunction are at the root of a vast range of symptoms — from fatigue and weight gain to anxiety, skin conditions and autoimmune issues.",
+      "detail": "Using advanced functional testing (DUTCH hormone panels, comprehensive stool analysis, SIBO breath testing and more), Dr Najat creates targeted protocols to restore balance from within.",
+      "price": "£195",
+      "price_label": "/ follow-up session",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&auto=format&fit=crop&q=80",
+      "includes": [
+        { "item": "DUTCH comprehensive hormone panel" },
+        { "item": "Gut microbiome & stool analysis" },
+        { "item": "SIBO & intestinal permeability testing" },
+        { "item": "Thyroid & adrenal function assessment" },
+        { "item": "Targeted supplement protocols" },
+        { "item": "Dietary & lifestyle therapy" }
+      ]
+    },
+    {
+      "name": "Personalised Wellness Programme",
+      "eyebrow": "Ongoing Care",
+      "description": "For patients who are ready to commit to a comprehensive transformation, the 3 or 6-month wellness programme provides everything you need to achieve sustainable, lasting results.",
+      "detail": "You'll receive full access to Dr Najat throughout your programme — with regular consultations, messaging support, and a continuously refined protocol as your body responds and heals.",
+      "price": "",
+      "price_label": "",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700&auto=format&fit=crop&q=80",
+      "includes": [
+        { "item": "Monthly 60-minute consultations" },
+        { "item": "Comprehensive laboratory testing" },
+        { "item": "Bespoke nutrition plan" },
+        { "item": "Targeted supplementation protocol" },
+        { "item": "Lifestyle & stress management coaching" },
+        { "item": "Messaging support between sessions" },
+        { "item": "Progress tracking & adjustments" }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "Foundation",
+      "duration": "3-Month Programme",
+      "price": "£895",
+      "price_note": "+ initial consultation",
+      "featured": false,
+      "includes": [
+        { "item": "3 x 60-minute consultations" },
+        { "item": "Core laboratory testing panel" },
+        { "item": "Personalised nutrition plan" },
+        { "item": "Supplement protocol" },
+        { "item": "Email support" }
+      ]
+    },
+    {
+      "name": "Transformation",
+      "duration": "6-Month Programme",
+      "price": "£1,595",
+      "price_note": "+ initial consultation",
+      "featured": true,
+      "includes": [
+        { "item": "6 x 60-minute consultations" },
+        { "item": "Comprehensive lab testing (2 rounds)" },
+        { "item": "Advanced hormone & gut panels" },
+        { "item": "Personalised nutrition + meal ideas" },
+        { "item": "Full supplement protocol" },
+        { "item": "Messaging support between sessions" },
+        { "item": "Final review & maintenance plan" }
+      ]
+    },
+    {
+      "name": "Single Sessions",
+      "duration": "À la carte",
+      "price": "£195",
+      "price_note": "/ follow-up session",
+      "featured": false,
+      "includes": [
+        { "item": "1 x 60-minute consultation" },
+        { "item": "Results review & interpretation" },
+        { "item": "Protocol updates as needed" },
+        { "item": "Ideal for ongoing maintenance" }
+      ]
+    }
+  ]
+}

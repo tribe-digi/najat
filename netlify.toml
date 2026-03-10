@@ -3,9 +3,8 @@
 # ============================================================
 
 [build]
-  # This is a plain static site — no build step needed
-  # Just publish the src folder directly
-  publish = "src"
+  command = "npm run build"
+  publish = "_site"
 
 # ============================================================
 # Netlify Identity — required for the CMS login

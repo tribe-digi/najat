@@ -1,73 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr Najat Amharar — Functional Medicine</title>
-  <meta name="description" content="Dr Najat Amharar is a board-certified functional medicine physician helping patients uncover root causes of chronic illness and restore lasting vitality." />
-  <meta property="og:title" content="Dr Najat Amharar — Functional Medicine" />
-  <meta property="og:description" content="Root-cause medicine. Personalised care. Lasting results." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+---
+title: "Dr Najat Amharar — Functional Medicine"
+description: "Dr Najat Amharar is a board-certified functional medicine physician helping patients uncover root causes of chronic illness and restore lasting vitality."
+ogTitle: "Dr Najat Amharar — Functional Medicine"
+ogDescription: "Root-cause medicine. Personalised care. Lasting results."
+activePage: home
+headerScrolled: false
+---
+{% extends "base.njk" %}
 
-<!-- ===================== HEADER ===================== -->
-<header class="site-header" id="site-header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-name">Dr Najat Amharar</span>
-        <span class="nav__logo-title">Functional Medicine</span>
-      </a>
-      <ul class="nav__links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="nav__cta">Book a Call</a></li>
-      </ul>
-      <button class="nav__hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<!-- Mobile nav overlay -->
-<div class="mobile-nav">
-  <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" style="color:var(--color-gold-light)">Book a Call</a>
-</div>
+{% block content %}
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
   <div class="hero__content">
-    <span class="hero__tagline">Functional Medicine · Root-Cause Care</span>
+    <span class="hero__tagline">{{ home.hero.tagline }}</span>
     <h1 class="hero__title fade-up">
-      Heal from <em>within.</em><br>
-      Live fully.
+      <em>{{ home.hero.headline_1 }}</em><br>
+      {{ home.hero.headline_2 }}
     </h1>
     <p class="hero__text fade-up fade-up--delay-1">
-      Dr Najat Amharar takes a whole-person approach to health — uncovering the root causes of your symptoms and crafting a deeply personalised path back to vitality.
+      {{ home.hero.text }}
     </p>
     <div class="hero__actions fade-up fade-up--delay-2">
-      <a href="contact.html" class="btn btn--primary">Book a Free Discovery Call</a>
-      <a href="about.html" class="btn btn--outline">Meet Dr Najat</a>
+      <a href="{{ home.hero.btn_primary_link }}" class="btn btn--primary">{{ home.hero.btn_primary_text }}</a>
+      <a href="{{ home.hero.btn_secondary_link }}" class="btn btn--outline">{{ home.hero.btn_secondary_text }}</a>
     </div>
     <span class="hero__scroll">Scroll to explore</span>
   </div>
   <div class="hero__image">
-    <!-- Replace hero-bg.jpg with a real photo -->
     <img
-      src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&auto=format&fit=crop&q=80"
+      src="{{ home.hero.image }}"
       alt="Calm natural wellness setting"
       loading="eager"
     />
@@ -79,22 +41,12 @@
 <section class="stats-strip">
   <div class="container">
     <div class="stats-strip__grid">
+      {% for stat in home.stats %}
       <div class="stat" data-reveal>
-        <div class="stat__number">12+</div>
-        <div class="stat__label">Years of Practice</div>
+        <div class="stat__number">{{ stat.number }}</div>
+        <div class="stat__label">{{ stat.label }}</div>
       </div>
-      <div class="stat" data-reveal>
-        <div class="stat__number">500+</div>
-        <div class="stat__label">Patients Helped</div>
-      </div>
-      <div class="stat" data-reveal>
-        <div class="stat__number">98%</div>
-        <div class="stat__label">Patient Satisfaction</div>
-      </div>
-      <div class="stat" data-reveal>
-        <div class="stat__number">1:1</div>
-        <div class="stat__label">Personalised Care</div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -105,23 +57,22 @@
     <div class="grid-2">
 
       <div class="about-snippet__image" data-reveal>
-        <!-- Replace with Dr Najat's photo -->
         <img
-          src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=700&auto=format&fit=crop&q=80"
-          alt="Dr Najat Amharar"
+          src="{{ home.about_snippet.photo }}"
+          alt="{{ settings.doctor_name }}"
         />
         <div class="about-snippet__badge">
-          <span class="about-snippet__badge-num">12+</span>
-          <span class="about-snippet__badge-label">Years of<br>Experience</span>
+          <span class="about-snippet__badge-num">{{ home.about_snippet.badge_number }}</span>
+          <span class="about-snippet__badge-label">{{ home.about_snippet.badge_label }}</span>
         </div>
       </div>
 
       <div class="about-snippet__content" data-reveal>
-        <span class="eyebrow">About Dr Najat</span>
-        <h2>A physician who<br>listens — deeply</h2>
+        <span class="eyebrow">{{ home.about_snippet.eyebrow }}</span>
+        <h2>{{ home.about_snippet.heading }}</h2>
         <div class="divider"></div>
-        <p class="lead">Dr Najat Amharar is a board-certified functional medicine physician with over 12 years of clinical experience. She combines advanced diagnostics with compassionate, unhurried care.</p>
-        <p>Rather than simply managing symptoms, Dr Najat investigates the underlying causes — hormonal imbalances, gut dysfunction, chronic inflammation, nutrient deficiencies — to restore your body's innate capacity to heal.</p>
+        <p class="lead">{{ home.about_snippet.lead }}</p>
+        <p>{{ home.about_snippet.body }}</p>
 
         <div class="credentials">
           <div class="credential">
@@ -153,7 +104,7 @@
           </div>
         </div>
 
-        <a href="about.html" class="btn btn--primary">Read Dr Najat's Story</a>
+        <a href="/about/" class="btn btn--primary">Read Dr Najat's Story</a>
       </div>
 
     </div>
@@ -178,7 +129,7 @@
         </div>
         <h3>Root-Cause Consultation</h3>
         <p>A comprehensive 90-minute deep-dive into your health history, symptoms, lifestyle and genetics to map the real drivers of your condition.</p>
-        <a href="services.html" class="service-card__link">Learn more →</a>
+        <a href="/services/" class="service-card__link">Learn more →</a>
       </div>
 
       <div class="service-card" data-reveal>
@@ -187,7 +138,7 @@
         </div>
         <h3>Hormone &amp; Gut Health</h3>
         <p>Advanced lab testing and targeted protocols to restore hormonal balance and heal the gut — two of the most common root causes of chronic illness.</p>
-        <a href="services.html" class="service-card__link">Learn more →</a>
+        <a href="/services/" class="service-card__link">Learn more →</a>
       </div>
 
       <div class="service-card" data-reveal>
@@ -196,13 +147,13 @@
         </div>
         <h3>Personalised Wellness Plans</h3>
         <p>A bespoke 3–6 month protocol combining nutrition, supplementation, lifestyle medicine and evidence-based interventions tailored to you.</p>
-        <a href="services.html" class="service-card__link">Learn more →</a>
+        <a href="/services/" class="service-card__link">Learn more →</a>
       </div>
 
     </div>
 
     <div class="text-center" style="margin-top:44px;" data-reveal>
-      <a href="services.html" class="btn btn--outline">View All Services</a>
+      <a href="/services/" class="btn btn--outline">View All Services</a>
     </div>
   </div>
 </section>
@@ -217,7 +168,7 @@
         <div class="divider"></div>
         <p>Functional medicine isn't a quick fix. It's a partnership — a collaborative process where we look at you as a whole person, not a list of symptoms.</p>
         <p>Every recommendation I make is grounded in the latest research and adapted to your unique biology, history and lifestyle.</p>
-        <a href="about.html" class="btn btn--primary" style="margin-top:20px;">My Approach</a>
+        <a href="/about/" class="btn btn--primary" style="margin-top:20px;">My Approach</a>
       </div>
 
       <div class="values-grid" data-reveal>
@@ -256,21 +207,13 @@
     </div>
 
     <div class="testimonial-grid">
+      {% for testimonial in home.testimonials %}
       <div class="testimonial-card" data-reveal>
         <div class="testimonial-card__stars">★★★★★</div>
-        <p>"After years of being told my results were 'normal', Dr Najat finally found what was wrong. Six months later I feel like a completely different person."</p>
-        <div class="testimonial-card__author">— Sarah M., 38</div>
+        <p>"{{ testimonial.quote }}"</p>
+        <div class="testimonial-card__author">— {{ testimonial.author }}</div>
       </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="testimonial-card__stars">★★★★★</div>
-        <p>"Dr Najat's approach is unlike any other doctor I've seen. She takes the time to really understand your whole life. My energy and mood have completely transformed."</p>
-        <div class="testimonial-card__author">— James T., 45</div>
-      </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="testimonial-card__stars">★★★★★</div>
-        <p>"I came to Dr Najat struggling with chronic gut issues. Her personalised protocol changed everything. I now know how to eat and live for my body."</p>
-        <div class="testimonial-card__author">— Priya R., 31</div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -284,54 +227,10 @@
         <p>Book a free 20-minute discovery call to see if functional medicine is right for you. No obligation — just a conversation.</p>
       </div>
       <div style="flex-shrink:0;" data-reveal>
-        <a href="contact.html" class="btn btn--gold" style="font-size:0.9rem;padding:18px 38px;">Book Your Free Call</a>
+        <a href="/contact/" class="btn btn--gold" style="font-size:0.9rem;padding:18px 38px;">Book Your Free Call</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="footer-brand__name">Dr Najat Amharar</div>
-        <div class="footer-brand__title">Functional Medicine Physician</div>
-        <p>Compassionate, evidence-based care that addresses the root causes of chronic illness and restores your vitality.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Pages</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="services.html">Root-Cause Consultation</a></li>
-          <li><a href="services.html">Hormone Health</a></li>
-          <li><a href="services.html">Gut Health</a></li>
-          <li><a href="services.html">Wellness Plans</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Get in Touch</h5>
-        <ul>
-          <li><a href="contact.html">Book a Call</a></li>
-          <li><a href="mailto:hello@drnajat.com">hello@drnajat.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Dr Najat Amharar. All rights reserved.</span>
-      <span>Designed with care for your health.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+{% endblock %}

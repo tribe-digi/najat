@@ -1,0 +1,13 @@
+{
+  "name": "dr-najat-website",
+  "version": "1.0.0",
+  "description": "Dr Najat Amharar functional medicine website",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "markdown-it": "^14.1.0"
+  }
+}

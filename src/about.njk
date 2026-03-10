@@ -1,0 +1,135 @@
+---
+title: "About Dr Najat — Functional Medicine"
+description: "Learn about Dr Najat Amharar's background, training, philosophy and approach to functional medicine."
+activePage: about
+headerScrolled: true
+---
+{% extends "base.njk" %}
+
+{% block content %}
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">About</span>
+    <h1>{{ about.headline }}</h1>
+    <div class="divider divider--center"></div>
+    <p class="lead">{{ about.subheadline }}</p>
+  </div>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:80px; align-items:start;">
+      <div data-reveal>
+        <img
+          src="{{ about.photo }}"
+          alt="{{ settings.doctor_name }}"
+          style="width:100%;height:580px;object-fit:cover;border-radius:12px;"
+        />
+      </div>
+      <div data-reveal style="padding-top:10px;">
+        <span class="eyebrow">My Story</span>
+        <h2>{{ about.story_heading }}</h2>
+        <div class="divider"></div>
+        <p class="lead">{{ about.story_lead }}</p>
+        {{ about.story_body | markdownify | safe }}
+
+        <div class="highlight-box">
+          <p>"{{ about.highlight_quote }}"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CREDENTIALS ===================== -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="grid-2" style="gap:80px;">
+      <div data-reveal>
+        <span class="eyebrow">Education &amp; Training</span>
+        <h2>Built on a foundation of deep expertise</h2>
+        <div class="divider"></div>
+
+        <div class="timeline">
+          {% for item in about.timeline %}
+          <div class="timeline-item">
+            <div class="timeline-item__year">{{ item.year }}</div>
+            <div class="timeline-item__content">
+              <strong>{{ item.title }}</strong>
+              <span>{{ item.description }}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div data-reveal>
+        <span class="eyebrow">Areas of Expertise</span>
+        <h2>Conditions I work with most</h2>
+        <div class="divider"></div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          {% for item in about.expertise %}
+          <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--color-white);border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+            <span style="color:var(--color-gold);font-size:1.2rem;">◆</span>
+            <span style="font-weight:500;color:var(--color-primary);">{{ item.condition }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHILOSOPHY ===================== -->
+<section class="section philosophy-section">
+  <div class="container">
+    <div class="section-header section-header--center" data-reveal>
+      <span class="eyebrow">My Approach</span>
+      <h2>The functional medicine difference</h2>
+      <div class="divider divider--center"></div>
+      <p class="lead" style="max-width:600px;">Functional medicine asks <em>why</em> — not just <em>what</em>. It's a science-based approach that considers the web of interactions between your genes, environment, lifestyle and mindset.</p>
+    </div>
+
+    <div class="values-grid" data-reveal>
+      <div class="value-item">
+        <div class="value-item__num">01</div>
+        <h4>Your Story Matters</h4>
+        <p>I take 90 minutes to truly understand your health journey — the timeline of events, stressors, and patterns that conventional appointments simply don't allow for.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__num">02</div>
+        <h4>Advanced Diagnostics</h4>
+        <p>Beyond standard blood panels. Comprehensive hormone testing, microbiome analysis, nutrient levels, genetic insights and more — to paint the full picture.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__num">03</div>
+        <h4>Evidence-Based Protocols</h4>
+        <p>Everything I recommend is grounded in peer-reviewed research. No fads. No guesswork. Targeted interventions that work with your body's systems.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__num">04</div>
+        <h4>Partnership &amp; Continuity</h4>
+        <p>Healing takes time. I work alongside you through the whole process — adjusting, refining, celebrating progress and navigating challenges together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <div>
+        <h2>Let's start your journey</h2>
+        <p>Book a free 20-minute discovery call to discuss your health concerns and find out if functional medicine is the right fit for you.</p>
+      </div>
+      <a href="/contact/" class="btn btn--gold" style="font-size:0.9rem;padding:18px 38px;flex-shrink:0;">Book a Free Call</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

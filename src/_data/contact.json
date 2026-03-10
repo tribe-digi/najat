@@ -1,0 +1,24 @@
+{
+  "headline": "Let's talk about your health",
+  "subheadline": "Start with a free 20-minute discovery call — no obligation, just a conversation.",
+  "intro": "Whether you have questions, want to learn more about a specific service, or are ready to book — get in touch and we'll respond within 1–2 business days.",
+  "booking_link": "",
+  "faqs": [
+    {
+      "question": "What is a discovery call?",
+      "answer": "A free 20-minute video or phone call where we discuss your health history and current symptoms. It's a chance for you to ask questions, and for me to understand whether I can help. There's absolutely no pressure or obligation."
+    },
+    {
+      "question": "Do you offer online consultations?",
+      "answer": "Yes — all consultations are available online via video call, so you can work with me from anywhere in the world. In-person consultations in London are also available by arrangement."
+    },
+    {
+      "question": "How is this different from seeing my GP?",
+      "answer": "Functional medicine takes a fundamentally different approach. Rather than treating isolated symptoms with medication, I invest time — often 90+ minutes in the first consultation — investigating the underlying causes. I use advanced testing and consider the full picture of your lifestyle, genetics, environment and history."
+    },
+    {
+      "question": "How quickly will I see results?",
+      "answer": "This varies depending on how complex your health situation is, how long you've had your symptoms, and how well you're able to implement changes. Many patients notice meaningful improvements within 4–8 weeks. A typical programme runs 3–6 months for comprehensive results."
+    }
+  ]
+}

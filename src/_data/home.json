@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "tagline": "Functional Medicine · Root-Cause Care",
+    "headline_1": "Heal from within.",
+    "headline_2": "Live fully.",
+    "text": "Dr Najat Amharar takes a whole-person approach to health — uncovering the root causes of your symptoms and crafting a deeply personalised path back to vitality.",
+    "btn_primary_text": "Book a Free Discovery Call",
+    "btn_primary_link": "/contact/",
+    "btn_secondary_text": "Meet Dr Najat",
+    "btn_secondary_link": "/about/",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&auto=format&fit=crop&q=80"
+  },
+  "stats": [
+    { "number": "12+",  "label": "Years of Practice" },
+    { "number": "500+", "label": "Patients Helped" },
+    { "number": "98%",  "label": "Patient Satisfaction" },
+    { "number": "1:1",  "label": "Personalised Care" }
+  ],
+  "about_snippet": {
+    "eyebrow": "About Dr Najat",
+    "heading": "A physician who listens — deeply",
+    "lead": "Dr Najat Amharar is a board-certified functional medicine physician with over 12 years of clinical experience. She combines advanced diagnostics with compassionate, unhurried care.",
+    "body": "Rather than simply managing symptoms, Dr Najat investigates the underlying causes — hormonal imbalances, gut dysfunction, chronic inflammation, nutrient deficiencies — to restore your body's innate capacity to heal.",
+    "photo": "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=700&auto=format&fit=crop&q=80",
+    "badge_number": "12+",
+    "badge_label": "Years of\nExperience"
+  },
+  "testimonials": [
+    {
+      "quote": "After years of being told my results were 'normal', Dr Najat finally found what was wrong. Six months later I feel like a completely different person.",
+      "author": "Sarah M., 38"
+    },
+    {
+      "quote": "Dr Najat's approach is unlike any other doctor I've seen. She takes the time to really understand your whole life. My energy and mood have completely transformed.",
+      "author": "James T., 45"
+    },
+    {
+      "quote": "I came to Dr Najat struggling with chronic gut issues. Her personalised protocol changed everything. I now know how to eat and live for my body.",
+      "author": "Priya R., 31"
+    }
+  ]
+}

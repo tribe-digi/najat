@@ -1,0 +1,40 @@
+{
+  "headline": "Dr Najat Amharar",
+  "subheadline": "Physician. Investigator. Advocate for your health.",
+  "photo": "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=700&auto=format&fit=crop&q=80",
+  "story_heading": "Why I chose a different kind of medicine",
+  "story_lead": "Dr Najat Amharar didn't come to functional medicine by chance — she came to it by necessity.",
+  "story_body": "After years of conventional practice, she saw a recurring pattern: patients with real, debilitating symptoms being told that their tests were \"normal\" and being handed prescriptions to manage — not resolve — their suffering. That wasn't good enough.\n\nShe spent the next several years deepening her training in functional, integrative, and nutritional medicine — learning to read the body as a whole, interconnected system rather than a collection of isolated symptoms.\n\nToday, Dr Najat works with patients experiencing complex, chronic health challenges — from hormonal chaos and gut dysfunction to autoimmune conditions, fatigue syndromes, and metabolic imbalances. Her care is unhurried, evidence-based, and deeply personal.",
+  "highlight_quote": "I believe your body has an extraordinary capacity to heal. My job is to remove the obstacles standing in its way.",
+  "timeline": [
+    {
+      "year": "IFMCP",
+      "title": "Certified Functional Medicine Practitioner",
+      "description": "Institute for Functional Medicine — the gold standard of functional medicine certification"
+    },
+    {
+      "year": "MD",
+      "title": "Doctor of Medicine",
+      "description": "Internal medicine training with 12+ years of clinical practice across NHS and private settings"
+    },
+    {
+      "year": "CNS",
+      "title": "Certified Nutritional Specialist",
+      "description": "Advanced nutritional biochemistry and therapeutic nutrition"
+    },
+    {
+      "year": "CPD",
+      "title": "Ongoing Continuing Education",
+      "description": "Regular training in precision medicine, genomics, and emerging research"
+    }
+  ],
+  "expertise": [
+    { "condition": "Chronic fatigue & burnout" },
+    { "condition": "Hormonal imbalance (thyroid, adrenal, sex hormones)" },
+    { "condition": "Gut disorders (IBS, SIBO, leaky gut, IBD)" },
+    { "condition": "Autoimmune conditions" },
+    { "condition": "Metabolic health & weight" },
+    { "condition": "Anxiety, depression & brain fog" },
+    { "condition": "Preventive & longevity medicine" }
+  ]
+}
