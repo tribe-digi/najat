@@ -72,7 +72,6 @@ collections:
               - { label: "Primary Button Link", name: "btn_primary_link", widget: "string" }
               - { label: "Secondary Button Text", name: "btn_secondary_text", widget: "string" }
               - { label: "Secondary Button Link", name: "btn_secondary_link", widget: "string" }
-              - { label: "Hero Image", name: "image", widget: "image", required: false }
 
           - label: "Stats Bar"
             name: "stats"
