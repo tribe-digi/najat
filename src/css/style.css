@@ -123,6 +123,12 @@ p:last-child { margin-bottom: 0; }
   gap: 32px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
 .text-center { text-align: center; }
 .text-center p { margin-left: auto; margin-right: auto; }
 
@@ -933,6 +939,36 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.5;
 }
 
+/* --- Conditions Banner ------------------------------------ */
+.conditions-col__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conditions-list li {
+  color: rgba(255,255,255,0.78);
+  font-size: 0.88rem;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  line-height: 1.4;
+}
+
+.conditions-list li:last-child {
+  border-bottom: none;
+}
+
 /* --- Animations ------------------------------------------- */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -950,6 +986,7 @@ p:last-child { margin-bottom: 0; }
 /* --- Mobile / Responsive ---------------------------------- */
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .testimonial-grid { grid-template-columns: 1fr; gap: 20px; }
   .stats-strip__grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
@@ -963,6 +1000,7 @@ p:last-child { margin-bottom: 0; }
 
   .grid-2 { grid-template-columns: 1fr; gap: 40px; }
   .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; gap: 24px; }
   .values-grid { grid-template-columns: 1fr; }
 
   .nav__links { display: none; }

@@ -47,38 +47,106 @@ headerScrolled: true
 <!-- ===================== CREDENTIALS ===================== -->
 <section class="section section--cream">
   <div class="container">
-    <div class="grid-2" style="gap:80px;">
-      <div data-reveal>
-        <span class="eyebrow">Education &amp; Training</span>
-        <h2>Built on a foundation of deep expertise</h2>
-        <div class="divider"></div>
+    <div data-reveal>
+      <span class="eyebrow">Education &amp; Training</span>
+      <h2>Built on a foundation of deep expertise</h2>
+      <div class="divider"></div>
 
-        <div class="timeline">
-          {% for item in about.timeline %}
-          <div class="timeline-item">
-            <div class="timeline-item__year">{{ item.year }}</div>
-            <div class="timeline-item__content">
-              <strong>{{ item.title }}</strong>
-              <span>{{ item.description }}</span>
-            </div>
+      <div class="timeline">
+        {% for item in about.timeline %}
+        <div class="timeline-item">
+          <div class="timeline-item__year">{{ item.year }}</div>
+          <div class="timeline-item__content">
+            <strong>{{ item.title }}</strong>
+            <span>{{ item.description }}</span>
           </div>
-          {% endfor %}
         </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONDITIONS ===================== -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-header section-header--center" data-reveal>
+      <span class="eyebrow" style="color:var(--color-gold);">Areas of Expertise</span>
+      <h2>Conditions I work with</h2>
+      <div class="divider divider--center" style="background:var(--color-gold);"></div>
+    </div>
+
+    <div class="grid-4" data-reveal>
+      <div class="conditions-col">
+        <h4 class="conditions-col__title">Gut, Immune &amp; Inflammation</h4>
+        <ul class="conditions-list">
+          <li>Gut dysbiosis</li>
+          <li>Leaky gut</li>
+          <li>IBS / IBD</li>
+          <li>SIBO</li>
+          <li>Food intolerances</li>
+          <li>Candida overgrowth</li>
+          <li>Autoimmune conditions</li>
+          <li>Chronic inflammation</li>
+          <li>Allergies</li>
+          <li>Eczema</li>
+          <li>Psoriasis</li>
+          <li>Rheumatoid arthritis</li>
+        </ul>
       </div>
 
-      <div data-reveal>
-        <span class="eyebrow">Areas of Expertise</span>
-        <h2>Conditions I work with most</h2>
-        <div class="divider"></div>
+      <div class="conditions-col">
+        <h4 class="conditions-col__title">Hormones &amp; Metabolism</h4>
+        <ul class="conditions-list">
+          <li>Hormonal imbalance</li>
+          <li>Low testosterone</li>
+          <li>Oestrogen dominance</li>
+          <li>Thyroid dysfunction</li>
+          <li>Hashimoto's</li>
+          <li>Adrenal fatigue</li>
+          <li>Insulin resistance</li>
+          <li>PCOS</li>
+          <li>Menopause</li>
+          <li>Perimenopause</li>
+          <li>Endometriosis</li>
+          <li>Metabolic syndrome</li>
+          <li>Type 2 diabetes</li>
+        </ul>
+      </div>
 
-        <div style="display:flex;flex-direction:column;gap:14px;">
-          {% for item in about.expertise %}
-          <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--color-white);border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
-            <span style="color:var(--color-gold);font-size:1.2rem;">◆</span>
-            <span style="font-weight:500;color:var(--color-primary);">{{ item.condition }}</span>
-          </div>
-          {% endfor %}
-        </div>
+      <div class="conditions-col">
+        <h4 class="conditions-col__title">Brain, Energy &amp; Sleep</h4>
+        <ul class="conditions-list">
+          <li>Burnout</li>
+          <li>Chronic fatigue</li>
+          <li>Brain fog</li>
+          <li>Anxiety</li>
+          <li>Depression</li>
+          <li>ADHD</li>
+          <li>Autism</li>
+          <li>Sleep disorders</li>
+          <li>Insomnia</li>
+          <li>Long COVID / post-viral fatigue</li>
+          <li>Nervous system dysregulation</li>
+          <li>Fibromyalgia</li>
+        </ul>
+      </div>
+
+      <div class="conditions-col">
+        <h4 class="conditions-col__title">Fertility, Longevity &amp; Healthy Ageing</h4>
+        <ul class="conditions-list">
+          <li>Female fertility</li>
+          <li>Male fertility</li>
+          <li>Low libido</li>
+          <li>Preconception health</li>
+          <li>Longevity optimisation</li>
+          <li>Cardiovascular health</li>
+          <li>Bone density</li>
+          <li>Cognitive decline</li>
+          <li>Cancer prevention</li>
+          <li>Biological age reduction</li>
+          <li>Weight management</li>
+        </ul>
       </div>
     </div>
   </div>
